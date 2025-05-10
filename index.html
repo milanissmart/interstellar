@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interstellar Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+    .overflow-menu {
+      background-color: #111;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .olink {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      background: #222;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .olink:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <div class="overflow-menu shoot" id="overflow-menu">
+    <a href="/index.html" class="olink">Home</a>
+    <a href="/games/" class="olink">Games</a>
+    <a href="/apps/" class="olink">Apps</a>
+    <a href="/proxy2/" class="olink">Proxy 2</a>
+    <a href="https://tools.example.com" class="olink">External Tools</a>
+    <a href="/settings.html" class="olink">Settings</a>
+  </div>
+
+  <!-- Interstellar Entry -->
+  <div id="app"></div>
+
+  <!-- Scripts for Interstellar -->
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>
